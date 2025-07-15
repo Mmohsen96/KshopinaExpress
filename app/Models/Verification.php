@@ -1836,7 +1836,7 @@ class Verification extends Model
             $client = new guzzle([
                 'headers' => [
                     'Content-Type' => 'application/json',
-                    'X-Shopify-Access-Token' => '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',
+                    'X-Shopify-Access-Token' => '',
                     'debug' => true,
                 ],
                 "ssl" => [
