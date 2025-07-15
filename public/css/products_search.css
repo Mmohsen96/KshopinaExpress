@@ -1,0 +1,254 @@
+.products_search{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.order_number_input{
+    border-radius: 3px;
+    width: 50%;
+    border: 2px solid #7b7b7b;
+}
+
+.order_number_input:focus-visible {
+    outline: none;
+}
+
+.order_number_input:focus{
+    box-shadow: 0 0 0 0.1rem rgb(202 155 73 / 65%);
+    border-color: #c39748;
+}
+
+.results{
+    display: none;
+    margin: 30px 10px;
+    padding: 30px 0px;
+    border: 2px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.data_{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+hr{
+    width: 90%;
+}
+
+.product_card{
+    margin: 20px 10px;
+}
+
+.product_card_admin{
+    margin: 5px 60px;
+    padding: 20px;
+    justify-content: space-around;
+    transition:  .5s;
+}
+
+.product_card_admin:hover{
+    border: 1px #e5e5e5 solid;
+    border-radius: 4px;
+    background-color: #e5e5e526;
+}
+
+
+.variant_card{
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.variant_card:hover{
+    border: 1px #e5e5e5 solid;
+    background-color: #e5e5e526;
+}
+
+.product_title{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product_value{
+    font-size: 14px;
+}
+
+.card-img{
+    position: relative;
+    background-position: center;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.match_btn{
+    background-color: #e5e5e5;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 5px;
+    color: #1b3425;
+    font-weight: 600;
+}
+
+.match_btn:hover{
+    background-color: #ca9b49bd;
+}
+
+.match_btn:focus{
+    border: none;
+    outline: 2px solid #ca9b49bd;
+}
+
+.padding_N{
+    padding: 0px;
+}
+
+#product_name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ca9b49;
+}
+
+.dropdown-item:active {
+    color: #cc9b48;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: white;
+}
+
+.contact_title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #ca9b49;
+}
+
+.contact_inf{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.input_contain{
+    margin: 30px 0px;
+    display: flex;
+}
+
+.contact_label{
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+/* btns */
+.btn-primary {
+    border-radius: 18px;
+    font-size: 14px;
+    background-color: #e3ce88;
+    border-color: #e3ce88;
+    color: #426851;
+}
+
+.btn-primary:focus {
+    border-radius: 18px;
+    font-size: 14px;
+    background-color: #e3ce88;
+    border-color: #e3ce88;
+    color: #426851;
+}
+
+.btn-primary:hover {
+    border-radius: 18px;
+    font-size: 14px;
+    background-color: #cb9d48e6;
+    border-color: #cb9d48e6;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    border-radius: 18px;
+    font-size: 14px;
+    background-color: #cb9d48e6 !important;
+    border-color: #cb9d48e6 !important;
+}
+
+.btn-primary:disabled {
+    border-radius: 18px;
+    font-size: 14px;
+    background-color: #303030e6 !important;
+    border-color: #303030e6 !important;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    outline: none;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgb(144 114 57 / 50%) !important;
+}
+
+/* popups */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    display: none;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 35%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    height: 85%;
+    overflow: auto;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #ca9b49;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .closee,
+.return_close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .closee:hover,
+.return_close:hover {
+    color: #ca9b49;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
+
